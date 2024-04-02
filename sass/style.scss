@@ -1,0 +1,520 @@
+@use "variables" as var;
+@use 'mixins' as mx;
+
+@include mx.breakpoints("celular") { 
+
+header { 
+    display: flex;
+    justify-content: center;
+
+    .cabecalho {
+        margin: 0px 0px 0px 0px;    
+        padding: 0px 0px 50px 0px;
+
+        .logo {
+            width: 150px;
+            height: 54px;
+        }   
+
+        button {
+            display: none;
+        }
+
+        .naveg {
+            display: none;
+        }
+    }
+}
+
+.apresentacao {
+     
+    .conteudo-1 {
+
+        
+        h1 {
+
+            font-size: 32px;   
+               
+        }
+    }
+
+}
+    
+.detalhes {
+     margin: 0px 0px 0px 0px;
+     padding: 0px 0px 0px 0px;
+   
+    .detalhes-1 {
+        @include mx.flex3();    
+        padding: 10px 0px 30px 0px;
+        margin: 0px 0px 0px 0px;
+        gap: 10px;
+    }
+}
+
+.cadastro{
+
+    
+    .input-1 {
+        width: 330px;
+        height: 58px;
+        border-radius: 50px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .button-1 {
+        width: 352px;
+        height: 58px;
+        border-radius: 50px;
+    }
+
+}
+
+#conteudo {
+
+        @include mx.flex3();  
+
+        #e {
+            visibility: hidden;
+         
+        }      
+}
+    
+#conteudo2 {
+    
+        @include mx.flex3();   
+        
+        div {
+
+        .caixa-conteudo {
+            margin: 0px 0px 20px 0px;
+        }
+}
+}
+
+#image-1{
+    width: 270px;
+    height: 288px;
+    margin: 20px 0px 20px 0px;    
+}
+
+.acesso-1 {
+   
+    .texto-acesso {
+        font-size: 32px;
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+.acesso-2 {
+
+  .input-2 {
+     width: 330px;
+     height: 58px;
+     border-radius: 50px;
+     margin: 0px 0px 20px 0px;
+     
+  }
+
+  .button-2 {
+    width: 352px;
+    height: 58px;
+    border-radius: 50px;
+    margin: 0px 0px 0px 0px;
+
+}  
+
+}
+
+#barra {
+        
+    hr {
+        max-width: 352px;
+        
+    }
+}
+
+}
+
+@include mx.breakpoints("tablet") { 
+
+    header { 
+
+        .cabecalho {
+            margin: 30px 30px 0px 30px;    
+            padding: 0px 0px 50px 0px;
+    
+            .logo {
+                width: 150px;
+                height: 54px;
+            }    
+        }
+    }
+    
+    .apresentacao {
+         
+        .conteudo-1 {
+               
+            h1 {
+    
+                font-size: 64px;   
+                   
+            }
+        }
+    
+    }
+        
+    .detalhes {
+         margin: 0px 0px 0px 0px;
+         padding: 0px 0px 0px 0px;
+       
+        .detalhes-1 {   
+            padding: 10px 0px 30px 0px;
+            margin: 0px 0px 0px 0px;
+        }
+    }
+
+    .cadastro{
+           
+        .input-1 {
+            width: 384px;
+            border-radius: 50px;
+            margin: 0px 0px 20px 0px;
+        }
+    
+        .button-1 {
+            width: 178px;
+            height: 58px;
+            border-radius: 50px;
+            margin: 0px 0px 0px 30px;
+        }
+    
+    }
+  
+    #conteudo {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 0px; 
+        gap: 20px;
+    }
+
+    #image-1{
+        width: 400px;
+        height: 426px;
+        margin: 0px 0px 0px 0px;        
+    }
+        
+    #conteudo2 {
+
+            div {
+                display: flex;
+                justify-content: space-between;  
+                
+            .caixa-conteudo {
+
+                width:  221px;
+                height: 282px;
+                margin: 10px 10px 10px 10px;
+                text-align: start;
+
+
+                .material {
+                    display: block;
+                }
+
+                h4{
+                    font-size: 24px;
+                    padding: 0px 0px 0px 0px;
+                    margin: 90px 0px 0px 20px;
+        
+                }
+        
+                p {
+                    font-size: 16px;
+                    padding: 0px 0px 0px 0px;
+                    color: #b1957e;
+                    margin: 20px 20px 0px 20px;
+        
+                }
+            
+            }
+    }
+    }
+       
+    .acesso-1 {
+       
+        .texto-acesso {
+            font-size: 64px;
+            margin: 0px 0px 20px 0px;
+        }
+    }
+    
+    .acesso-2 {
+    
+      .input-2 {
+        width: 384px;
+        border-radius: 50px;
+        margin: 0px 0px 20px 0px;
+         
+      }
+    
+      .button-2 {
+        width: 178px;
+        height: 58px;
+        border-radius: 50px;
+        margin: 0px 0px 0px 30px;
+    }  
+    
+    }
+
+    #barra {
+
+        hr {
+            max-width: 900px;
+            
+        }
+    }
+    
+    }
+
+@include mx.breakpoints("desktop") {
+
+    #conteudo {
+    #e {
+        visibility: hidden;
+     
+    } }
+}
+
+@include mx.breakpoints("telao") {
+
+    header { 
+
+        .cabecalho {
+            margin: 30px 250px 0px 250px;    
+            padding: 0px 0px 50px 0px;
+     
+        }
+    }
+
+    #conteudo {
+    #e {
+        visibility: hidden;
+     
+    } }
+}
+    
+
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: var.$preto;
+}
+
+// Parte da navegação do proijeto (inicio)
+
+.cabecalho {
+    @include mx.flex2(0px);
+    align-items: center;
+    padding: 25px 64px 25px 64px;
+
+    img {  
+        width: 200px;
+        height: 69px;
+        // margin: 40px 0px 0px 112px;
+    }
+
+    button {
+        @include mx.botao();
+    }  
+}
+
+
+.naveg {
+    @include mx.flex2(64px);
+    color: var.$branco;
+    list-style-type: none;
+    font-size: 16px;
+    // margin: 65px 0px 0px 0px;
+    cursor: pointer;
+    :hover {
+        color: var.$amarelo;
+    }
+}
+
+// Parte da navegação do proijeto (fim)
+
+
+
+// Parte do texto (inicio)
+
+.apresentacao {
+    // width: 845px;
+    // height: 500px;
+    @include mx.flex1();
+    // margin: 0px 0px 0px 298px;
+    
+    h1{
+        font-size: 64px;
+        color: var.$amarelo;      
+    }
+
+}
+
+.detalhes-1 {
+    @include mx.flex1();
+    font-size: 16px;
+    color: var.$branco;
+    margin: 0px 0px 0px 0px;
+    gap: 60px;
+    list-style-type: none;
+
+    li{ 
+        @include mx.flex1();
+        gap: 10px;  
+        cursor: pointer;
+    }
+        
+}
+
+.pequenos {
+    width: 24px;
+    height: 24px;
+}
+
+// Parte do texto (fim)
+
+
+// Parte do cadastro (inicio)
+
+.cadastro {
+    @include mx.flex1();
+    margin: 25px 0px 0px 0px;
+
+
+    input {
+        @include mx.input();  
+    }
+
+    button {
+        @include mx.botao();
+        margin: 0px 0px 0px 10px;
+
+    }  
+}
+
+// Parte do cadastro (fim)
+
+
+// Parte centro (inicio)
+
+#conteudo {
+    #e {
+        display: flex ;
+        width: 583px;
+        height: 503px;
+        margin: 0px 0px 110px 0px; 
+        position: absolute;
+        z-index: -1;
+    }
+
+    @include mx.flex1();
+    margin: 40px 0px 0px 0px;
+
+
+    #image-1 {
+        max-width: 600px;
+        max-height: 640px;
+
+    }
+}
+
+#conteudo2 {
+    @include mx.flex1();
+    gap: 10px;
+
+    .caixa-conteudo {
+        width: 265px;
+        height: 268px;
+        background-color: var.$branco;
+        margin: 0px 0px 20px 25px;
+        border-radius: 10px;
+        text-align: left;
+
+        img {
+            position: absolute;
+            padding: 50px 20px 0px 10px;
+            margin: 0px 0px 0px 15px;           
+        }
+
+
+        h4{
+            font-size: 24px;
+            padding: 80px 20px 0px 10px;
+            margin: 0px 0px 0px 15px;
+
+        }
+
+        p{
+            font-size: 16px;
+            padding: 0px 0px 0px 10px;
+            color: #b1957e;
+            margin: 10px 30px 0px 15px;
+
+
+        }
+    
+    }
+}
+
+// Parte centro (fim)
+
+// rodapé (inicio) 
+
+
+.acesso-1 {
+     @include mx.flex1();
+     margin: 50px 0px 0px 0px;
+    
+     h2{
+        margin: 10px 0px;
+        font-size: 64px;
+        color: var.$amarelo;
+     }
+}
+
+.acesso-2 {
+    @include mx.flex1();
+
+   input {
+      @include mx.input(); 
+      
+   }
+
+   button {
+    @include mx.botao();
+    margin: 0px 0px 0px 10px;
+}  
+
+}
+
+#barra {
+    display: flex;
+    justify-content: center;
+
+hr {
+    width: 1217px;
+    margin: 100px 0px 0px 0px;
+}
+ }
+
+footer{
+
+    @include mx.flex1();
+    margin: 50px 0px 0px 0px;
+
+    p {
+        color: var.$branco;
+     }
+}
+
+// rodapé (fim) 
