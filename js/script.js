@@ -8,7 +8,7 @@ botao.onclick = function(){
 var botao = document.getElementsByClassName('button-2')[0];
 botao.onclick = function(){
     alert('Voê já está na lista de espera');
-=======
+ }
 
 var botao = document.getElementsByClassName('botao')[0];
 botao.onclick = function(){
